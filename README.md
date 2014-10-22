@@ -6,7 +6,7 @@ Run `run.sh` to check.
 
 My guess:
 
-* Since I'm importing modules in the top level of the spec, all class names (as well as anything else defined in the module) are made available at the same scope, thus overriding first definition. That would only explain the behaviour with rspec loading all definitions before actually running the tests.
+* Since I'm importing modules in the top level of the spec, all class names (as well as anything else defined in the module) are made available at the same scope, thus overriding first definition. That would only explain the behaviour with rspec loading all definitions before actually running the tests. This is consistent with what you find in `dsl.rb`, `example_group.rb` and `world.rb` RSpec files.
 
 Conclusion:
 
