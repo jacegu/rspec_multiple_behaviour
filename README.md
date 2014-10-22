@@ -12,3 +12,4 @@ Conclusion:
 
 * Never include anything at the top level of an spec.
 * Wrap spec inside a module if you want to use include badly. Take a look at `top_level_fix` branch.
+* Use the same SUT modules in spec. Take a look at `same_module_fix`.
