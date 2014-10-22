@@ -1,12 +1,16 @@
 require_relative './module_a'
 
-include A
+module SPEC_A
 
-describe MyClass do
+  include A
 
-  it "It loads A class if no module is specified" do
-    MyClass.new.greet.should match /^Hi/
-    MyClass.new.greet.should_not match /^F/
+  describe MyClass do
+
+    it "It loads A class if no module is specified" do
+      MyClass.new.greet.should match /^Hi/
+      MyClass.new.greet.should_not match /^F/
+    end
+
   end
 
 end
