@@ -11,3 +11,4 @@ My guess:
 Conclusion:
 
 * Never include anything at the top level of an spec.
+* Wrap spec inside a module if you want to use include badly. Take a look at `top_level_fix` branch.
