@@ -1,12 +1,10 @@
 require 'a/my_class'
 
-include A
-
-describe MyClass do
+describe A::MyClass do
 
   it "It loads A class if no module is specified" do
-    expect(MyClass.new.greet).to match /^Hi/
-    expect(MyClass.new.greet).to_not match /^F/
+    expect(described_class.new.greet).to match /^Hi/
+    expect(described_class.new.greet).to_not match /^F/
   end
 
 end
