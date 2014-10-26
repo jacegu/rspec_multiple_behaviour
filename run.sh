@@ -1,3 +1,12 @@
-rspec spec_a.rb
-rspec spec_a_b.rb
-rspec spec_a.rb spec_a_b.rb
+echo "*********************************************************************************"
+echo "* This will work                                                                *"
+echo "*********************************************************************************"
+rspec spec/a/my_class_spec.rb
+rspec spec/a/b/my_class_spec.rb
+echo
+
+echo "*********************************************************************************"
+echo "* This will not work                                                            *"
+echo "*********************************************************************************"
+rspec spec/a/my_class_spec.rb spec/a/b/my_class_spec.rb
+echo
