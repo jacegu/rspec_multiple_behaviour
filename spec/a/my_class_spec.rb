@@ -5,8 +5,8 @@ include A
 describe MyClass do
 
   it "It loads A class if no module is specified" do
-    MyClass.new.greet.should match /^Hi/
-    MyClass.new.greet.should_not match /^F/
+    expect(MyClass.new.greet).to match /^Hi/
+    expect(MyClass.new.greet).to_not match /^F/
   end
 
 end
