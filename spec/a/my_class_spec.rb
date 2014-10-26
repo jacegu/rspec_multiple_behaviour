@@ -1,4 +1,4 @@
-require_relative './module_a'
+require 'a/my_class'
 
 include A
 

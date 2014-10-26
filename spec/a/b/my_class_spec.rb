@@ -1,4 +1,4 @@
-require_relative 'module_a_b'
+require 'a/b/my_class'
 
 include A::B
 
